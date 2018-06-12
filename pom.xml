@@ -6,7 +6,7 @@
 
     <groupId>cms.sre</groupId>
     <artifactId>mongo-reactive-connection-helper</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.BUILDNUMBER</version>
     <packaging>jar</packaging>
     <distributionManagement>
         <repository>
@@ -20,14 +20,60 @@
         <artifactId>spring-parent-pom</artifactId>
         <version>1.1.0</version>
     </parent>
+    <properties>
+        <mongo.version>3.7.1</mongo.version>
+    </properties>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-mongodb-reactive</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.mongodb</groupId>
+                    <artifactId>*</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpclient</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.mongodb</groupId>
+            <artifactId>mongodb-driver-async</artifactId>
+            <version>${mongo.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.mongodb</groupId>
+                    <artifactId>mongodb-driver-core</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.mongodb</groupId>
+            <artifactId>mongodb-driver-core</artifactId>
+            <version>${mongo.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mongodb</groupId>
+            <artifactId>bson</artifactId>
+            <version>${mongo.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-transport</artifactId>
+            <version>4.1.25.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>de.flapdoodle.embed</groupId>
+            <artifactId>de.flapdoodle.embed.mongo</artifactId>
+            <version>2.0.3</version>
+        </dependency>
+        <dependency>
+            <groupId>cms.sre</groupId>
+            <artifactId>httpclient-connection-helper</artifactId>
+            <version>1.2.1528817604</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
     <build>

@@ -1,16 +1,16 @@
 package cms.sre.mongo_reactive_connection_helper;
 
+import com.mongodb.MongoClientSettings;
 import com.mongodb.MongoCredential;
 import com.mongodb.ServerAddress;
-import com.mongodb.async.client.MongoClientSettings;
+import com.mongodb.async.client.MongoClient;
+import com.mongodb.async.client.MongoClients;
 import com.mongodb.connection.ClusterSettings;
-import com.mongodb.connection.ServerSettings;
 import com.mongodb.connection.SslSettings;
-import com.mongodb.reactivestreams.client.MongoClient;
-import com.mongodb.reactivestreams.client.MongoClients;
+import com.mongodb.connection.netty.NettyStreamFactoryFactory;
+import io.netty.channel.nio.NioEventLoopGroup;
 import org.apache.http.ssl.SSLContextBuilder;
 import org.apache.http.ssl.SSLContexts;
-import org.springframework.data.mongodb.config.AbstractReactiveMongoConfiguration;
 
 import javax.net.ssl.SSLContext;
 import java.io.File;
@@ -37,11 +37,13 @@ public class MongoReactiveClientFactory {
 
     public static MongoClient getLocahostMongoClient(String databaseName, String username, String password){
         ClusterSettings clusterSettings = ClusterSettings.builder()
-                .hosts(Arrays.asList(DEFAULT_LOCALHOST_ADDRESS_AND_PORT))
+
                 .build();
 
         MongoClientSettings settings = MongoClientSettings.builder()
-                .clusterSettings(clusterSettings)
+                .applyToClusterSettings((ClusterSettings.Builder builder) -> {
+                    builder.hosts(Arrays.asList(DEFAULT_LOCALHOST_ADDRESS_AND_PORT));
+                })
                 .credential(MongoCredential.createCredential(username, databaseName, password.toCharArray()))
                 .build();
 
@@ -118,26 +120,32 @@ public class MongoReactiveClientFactory {
     }
 
     public static MongoClient getMongoClient(MongoClientParameters mongoClientParameters){
+
+
         MongoClientSettings.Builder settingsBuilder = MongoClientSettings.builder();
 
         List<ServerAddress> serverAddresses = serverAddresses(mongoClientParameters);
         if(serverAddresses.size() > 0){
-            ClusterSettings clusterSettings = ClusterSettings.builder()
-                    .hosts(serverAddresses)
-                    .build();
-
-            settingsBuilder.clusterSettings(clusterSettings);
+            settingsBuilder.applyToClusterSettings((ClusterSettings.Builder builder) -> {
+                builder.hosts(serverAddresses);
+            });
         }
+
+
 
         SSLContext sslContext = sslContext(mongoClientParameters);
         if(sslContext != null){
-            SslSettings sslSettings = SslSettings.builder()
-                    .context(sslContext)
-                    .enabled(true)
-                    .invalidHostNameAllowed(true)
+            settingsBuilder.applyToSslSettings((SslSettings.Builder builder) -> {
+                builder.context(sslContext)
+                        .enabled(true)
+                        .invalidHostNameAllowed(true);
+            });
+
+            NettyStreamFactoryFactory nettyStreamFactoryFactory = NettyStreamFactoryFactory.builder()
+                    .eventLoopGroup(new NioEventLoopGroup())
                     .build();
 
-            settingsBuilder.sslSettings(sslSettings);
+            settingsBuilder.streamFactoryFactory(nettyStreamFactoryFactory);
         }
 
         MongoCredential mongoCredential = mongoCredential(mongoClientParameters);
