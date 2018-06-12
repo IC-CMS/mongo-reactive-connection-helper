@@ -6,7 +6,7 @@
 
     <groupId>cms.sre</groupId>
     <artifactId>mongo-reactive-connection-helper</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.BUILDNUMBER</version>
     <packaging>jar</packaging>
     <distributionManagement>
         <repository>
