@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d528bc82-b835-4be8-9a9b-d58680665348" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cms/sre/mongo_reactive_connection_helper/MongoClientParameters.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cms/sre/mongo_reactive_connection_helper/MongoReactiveClientFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/cms/sre/mongo_reactive_connection_helper/MongoClientParametersTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/cms/sre/mongo_reactive_connection_helper/MongoReactiveClientFactoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cms/sre/mongo_reactive_connection_helper/MongoReactiveClientFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cms/sre/mongo_reactive_connection_helper/MongoReactiveClientFactory.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -26,8 +21,23 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+            <state relative-caret-position="-476">
+              <caret line="23" column="20" lean-forward="true" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MongoReactiveClientFactory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cms/sre/mongo_reactive_connection_helper/MongoReactiveClientFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="7">
+              <caret line="44" column="85" selection-start-line="44" selection-start-column="85" selection-end-line="44" selection-end-column="85" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1331#1332#0" expanded="true" />
+                <element signature="e#1375#1376#0" expanded="true" />
+                <element signature="method#sslContext#0;class#MongoReactiveClientFactory#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -44,50 +54,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MongoReactiveClientFactory.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cms/sre/mongo_reactive_connection_helper/MongoReactiveClientFactory.java">
+      <file leaf-file-name="MongoReactiveClientFactoryTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/cms/sre/mongo_reactive_connection_helper/MongoReactiveClientFactoryTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="64" column="19" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
+            <state relative-caret-position="119">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-31" />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NettyStreamFactoryFactory.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/mongodb/mongodb-driver-core/3.7.1/mongodb-driver-core-3.7.1-sources.jar!/com/mongodb/connection/netty/NettyStreamFactoryFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="38" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#148#149#0" expanded="true" />
-                <element signature="e#202#203#0" expanded="true" />
-                <element signature="e#442#443#0" expanded="true" />
-                <element signature="e#463#464#0" expanded="true" />
-                <element signature="method#sslContext#0;class#MongoReactiveClientFactory#0" />
+                <element signature="e#2569#2570#0" expanded="true" />
+                <element signature="e#2605#2606#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ServerSettings.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/mongodb/mongodb-driver-core/3.6.3/mongodb-driver-core-3.6.3-sources.jar!/com/mongodb/connection/ServerSettings.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="605">
-              <caret line="247" column="4" selection-start-line="247" selection-start-column="4" selection-end-line="247" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MongoClients.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/mongodb/mongodb-driver-reactivestreams/1.7.1/mongodb-driver-reactivestreams-1.7.1-sources.jar!/com/mongodb/reactivestreams/client/MongoClients.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-860">
-              <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
-              <folding>
-                <element signature="e#1349#1350#0" expanded="true" />
-                <element signature="e#1423#1424#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MongoClientSettings.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/mongodb/mongodb-driver-async/3.6.3/mongodb-driver-async-3.6.3-sources.jar!/com/mongodb/async/client/MongoClientSettings.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-850">
-              <caret line="51" column="19" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -108,12 +99,19 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/cms/sre/mongo_reactive_connection_helper/MongoClientParameters.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/cms/sre/mongo_reactive_connection_helper/MongoReactiveClientFactory.java" />
         <option value="$PROJECT_DIR$/src/test/java/cms/sre/mongo_reactive_connection_helper/MongoClientParameters.java" />
         <option value="$PROJECT_DIR$/src/test/java/cms/sre/mongo_reactive_connection_helper/MongoClientParametersTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cms/sre/mongo_reactive_connection_helper/MongoReactiveClientFactory.java" />
+        <option value="$PROJECT_DIR$/src/test/java/cms/sre/mongo_reactive_connection_helper/MongoReactiveClientFactoryTest.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -128,11 +126,14 @@
       <select />
     </treeState>
   </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="6" />
+    <option name="x" value="1272" />
+    <option name="y" value="-8" />
     <option name="width" value="1296" />
-    <option name="height" value="986" />
+    <option name="height" value="1000" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -274,13 +275,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="mongo-reactive-connection-helper" type="b2602c69:ProjectViewProjectNode" />
               <item name="mongo-reactive-connection-helper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mongo-reactive-connection-helper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mongo-reactive-connection-helper" type="462c0819:PsiDirectoryNode" />
+              <item name=".circleci" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mongo-reactive-connection-helper" type="b2602c69:ProjectViewProjectNode" />
@@ -334,15 +339,23 @@
         </subPane>
       </pane>
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../product-list-emitter" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="vcs.CVS" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Users\dhhessl\IdeaProjects\mongo-reactive-connection-helper" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -397,6 +410,29 @@
       <option name="MAIN_CLASS_NAME" value="cms.sre.mongo_reactive_connection_helper.MongoClientParametersTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="MongoClientParametersTest.replicaSetLocationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mongo-reactive-connection-helper" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cms.sre.mongo_reactive_connection_helper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="cms.sre.mongo_reactive_connection_helper" />
+      <option name="MAIN_CLASS_NAME" value="cms.sre.mongo_reactive_connection_helper.MongoClientParametersTest" />
+      <option name="METHOD_NAME" value="replicaSetLocationTest" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -495,10 +531,12 @@
       <item itemvalue="JUnit.MongoClientParameters.constructorTest" />
       <item itemvalue="JUnit.MongoClientParametersTest.replicaSetNameTest" />
       <item itemvalue="JUnit.MongoClientParametersTest" />
+      <item itemvalue="JUnit.MongoClientParametersTest.replicaSetLocationTest" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.MongoClientParametersTest" />
+        <item itemvalue="JUnit.MongoClientParametersTest.replicaSetLocationTest" />
         <item itemvalue="JUnit.MongoClientParametersTest.replicaSetNameTest" />
         <item itemvalue="JUnit.MongoClientParameters.constructorTest" />
         <item itemvalue="JUnit.MongoClientParameters" />
@@ -515,7 +553,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1524575310357</updated>
+      <workItem from="1528820728176" duration="1714000" />
     </task>
+    <task id="LOCAL-00001" summary="Working">
+      <created>1524749909500</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1524749909500</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added Circleci support">
+      <created>1528822316974</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1528822316974</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -528,43 +582,173 @@
     <history-entry file="MongoClientParametersTest - 2018.04.24 at 10h 22m 28s.xml">
       <configuration name="MongoClientParametersTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="MongoClientParametersTest_replicaSetLocationTest - 2018.06.12 at 12h 47m 56s.xml">
+      <configuration name="MongoClientParametersTest.replicaSetLocationTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MongoClientParametersTest - 2018.06.12 at 12h 48m 01s.xml">
+      <configuration name="MongoClientParametersTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1714000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1272" y="-8" width="1296" height="1000" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" weight="0.32949308" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32949308" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info active="true" anchor="right" id="Maven Projects" order="3" visible="true" weight="0.32928804" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32949308" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.10760518" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" visible="true" weight="0.32830626" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32946634" />
+      <window_info anchor="bottom" id="Spring" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2540453" />
-      <window_info id="Learn" order="2" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26213592" />
+      <window_info anchor="right" id="Database" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info id="Learn" order="2" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Working" />
+    <MESSAGE value="Added Circleci support" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Circleci support" />
+  </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/cms/sre/mongo_reactive_connection_helper/MongoClientParametersTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1972">
+          <caret line="120" column="5" selection-start-line="120" selection-start-column="5" selection-end-line="120" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cms/sre/mongo_reactive_connection_helper/MongoReactiveClientFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="64" column="19" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1331#1332#0" expanded="true" />
+            <element signature="e#1375#1376#0" expanded="true" />
+            <element signature="method#sslContext#0;class#MongoReactiveClientFactory#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mongodb/mongodb-driver-core/3.6.3/mongodb-driver-core-3.6.3-sources.jar!/com/mongodb/connection/ServerSettings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3604">
+          <caret line="247" column="4" selection-start-line="247" selection-start-column="4" selection-end-line="247" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mongodb/mongodb-driver-reactivestreams/1.7.1/mongodb-driver-reactivestreams-1.7.1-sources.jar!/com/mongodb/reactivestreams/client/MongoClients.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+          <folding>
+            <element signature="e#1349#1350#0" expanded="true" />
+            <element signature="e#1423#1424#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mongodb/mongodb-driver-async/3.6.3/mongodb-driver-async-3.6.3-sources.jar!/com/mongodb/async/client/MongoClientSettings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="51" column="19" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/cms/sre/mongo_reactive_connection_helper/MongoClientParametersTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1972">
+          <caret line="120" column="5" selection-start-line="120" selection-start-column="5" selection-end-line="120" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cms/sre/mongo_reactive_connection_helper/MongoReactiveClientFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="64" column="19" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1331#1332#0" expanded="true" />
+            <element signature="e#1375#1376#0" expanded="true" />
+            <element signature="method#sslContext#0;class#MongoReactiveClientFactory#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mongodb/mongodb-driver-core/3.6.3/mongodb-driver-core-3.6.3-sources.jar!/com/mongodb/connection/ServerSettings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3604">
+          <caret line="247" column="4" selection-start-line="247" selection-start-column="4" selection-end-line="247" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mongodb/mongodb-driver-reactivestreams/1.7.1/mongodb-driver-reactivestreams-1.7.1-sources.jar!/com/mongodb/reactivestreams/client/MongoClients.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+          <folding>
+            <element signature="e#1349#1350#0" expanded="true" />
+            <element signature="e#1423#1424#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mongodb/mongodb-driver-async/3.6.3/mongodb-driver-async-3.6.3-sources.jar!/com/mongodb/async/client/MongoClientSettings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="51" column="19" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/mongodb/mongodb-driver-reactivestreams/1.7.1/mongodb-driver-reactivestreams-1.7.1.jar!/com/mongodb/reactivestreams/client/MongoClient.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -588,7 +772,7 @@
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/mongodb/mongodb-driver-async/3.6.3/mongodb-driver-async-3.6.3-sources.jar!/com/mongodb/async/client/MongoClientSettings.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-850">
+        <state relative-caret-position="221">
           <caret line="51" column="19" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
         </state>
       </provider>
@@ -602,14 +786,14 @@
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/mongodb/mongodb-driver-core/3.6.3/mongodb-driver-core-3.6.3-sources.jar!/com/mongodb/connection/ServerSettings.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="605">
+        <state relative-caret-position="3604">
           <caret line="247" column="4" selection-start-line="247" selection-start-column="4" selection-end-line="247" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/mongodb/mongodb-driver-reactivestreams/1.7.1/mongodb-driver-reactivestreams-1.7.1-sources.jar!/com/mongodb/reactivestreams/client/MongoClients.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-860">
+        <state relative-caret-position="187">
           <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
           <folding>
             <element signature="e#1349#1350#0" expanded="true" />
@@ -632,21 +816,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cms/sre/mongo_reactive_connection_helper/MongoReactiveClientFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="64" column="19" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#148#149#0" expanded="true" />
-            <element signature="e#202#203#0" expanded="true" />
-            <element signature="e#442#443#0" expanded="true" />
-            <element signature="e#463#464#0" expanded="true" />
-            <element signature="method#sslContext#0;class#MongoReactiveClientFactory#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cms/sre/mongo_reactive_connection_helper/MongoClientParameters.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -654,6 +823,42 @@
           <folding>
             <element signature="e#501#502#0" expanded="true" />
             <element signature="e#542#543#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mongodb/mongodb-driver-async/3.7.1/mongodb-driver-async-3.7.1.jar!/com/mongodb/async/client/MongoClientSettings.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="33" column="19" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mongodb/mongodb-driver-async/3.7.1/mongodb-driver-async-3.7.1-sources.jar!/com/mongodb/async/client/MongoClientSettings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="55" column="26" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mongodb/mongodb-driver-core/3.7.1/mongodb-driver-core-3.7.1.jar!/com/mongodb/connection/netty/NettyStreamFactoryFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
+          <folding>
+            <element signature="e#917#918#0" expanded="true" />
+            <element signature="e#948#949#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mongodb/mongodb-driver-core/3.7.1/mongodb-driver-core-3.7.1-sources.jar!/com/mongodb/connection/netty/NettyStreamFactoryFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="38" />
+          <folding>
+            <element signature="e#2569#2570#0" expanded="true" />
+            <element signature="e#2605#2606#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -668,10 +873,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cms/sre/mongo_reactive_connection_helper/MongoReactiveClientFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7">
+          <caret line="44" column="85" selection-start-line="44" selection-start-column="85" selection-end-line="44" selection-end-column="85" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1331#1332#0" expanded="true" />
+            <element signature="e#1375#1376#0" expanded="true" />
+            <element signature="method#sslContext#0;class#MongoReactiveClientFactory#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/cms/sre/mongo_reactive_connection_helper/MongoReactiveClientFactoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-31" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+        <state relative-caret-position="-476">
+          <caret line="23" column="20" lean-forward="true" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
         </state>
       </provider>
     </entry>
