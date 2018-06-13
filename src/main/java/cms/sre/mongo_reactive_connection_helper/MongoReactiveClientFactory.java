@@ -1,10 +1,10 @@
 package cms.sre.mongo_reactive_connection_helper;
 
-import com.mongodb.MongoClientSettings;
 import com.mongodb.MongoCredential;
 import com.mongodb.ServerAddress;
-import com.mongodb.async.client.MongoClient;
-import com.mongodb.async.client.MongoClients;
+import com.mongodb.async.client.MongoClientSettings;
+import com.mongodb.reactivestreams.client.MongoClients;
+import com.mongodb.reactivestreams.client.MongoClient;
 import com.mongodb.connection.ClusterSettings;
 import com.mongodb.connection.SslSettings;
 import com.mongodb.connection.netty.NettyStreamFactoryFactory;
@@ -37,17 +37,14 @@ public class MongoReactiveClientFactory {
 
     public static MongoClient getLocahostMongoClient(String databaseName, String username, String password){
         ClusterSettings clusterSettings = ClusterSettings.builder()
-
                 .build();
 
-        MongoClientSettings settings = MongoClientSettings.builder()
-                .applyToClusterSettings((ClusterSettings.Builder builder) -> {
-                    builder.hosts(Arrays.asList(DEFAULT_LOCALHOST_ADDRESS_AND_PORT));
-                })
+        MongoClientSettings mongoClientSettings = MongoClientSettings.builder()
+                .clusterSettings(clusterSettings)
                 .credential(MongoCredential.createCredential(username, databaseName, password.toCharArray()))
                 .build();
 
-        return MongoClients.create(settings);
+        return MongoClients.create(mongoClientSettings);
     }
 
     private static List<ServerAddress> serverAddresses(MongoClientParameters params){
@@ -126,20 +123,20 @@ public class MongoReactiveClientFactory {
 
         List<ServerAddress> serverAddresses = serverAddresses(mongoClientParameters);
         if(serverAddresses.size() > 0){
-            settingsBuilder.applyToClusterSettings((ClusterSettings.Builder builder) -> {
-                builder.hosts(serverAddresses);
-            });
+            settingsBuilder.clusterSettings(ClusterSettings.builder()
+                    .hosts(serverAddresses(mongoClientParameters))
+                    .build());
         }
 
 
 
         SSLContext sslContext = sslContext(mongoClientParameters);
         if(sslContext != null){
-            settingsBuilder.applyToSslSettings((SslSettings.Builder builder) -> {
-                builder.context(sslContext)
-                        .enabled(true)
-                        .invalidHostNameAllowed(true);
-            });
+            settingsBuilder.sslSettings(SslSettings.builder()
+                .context(sslContext)
+                .enabled(true)
+                .invalidHostNameAllowed(true)
+                .build());
 
             NettyStreamFactoryFactory nettyStreamFactoryFactory = NettyStreamFactoryFactory.builder()
                     .eventLoopGroup(new NioEventLoopGroup())

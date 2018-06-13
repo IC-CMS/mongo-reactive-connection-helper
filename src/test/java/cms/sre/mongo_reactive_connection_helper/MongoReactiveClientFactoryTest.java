@@ -9,13 +9,10 @@ import java.io.IOException;
 public class MongoReactiveClientFactoryTest {
 
 
-
     @Test
     public void testSslConnection() throws IOException {
-
-
-        String keyStoreLocation = PathUtils.getAbsolutePathForClasspathResource("client_keystore.jks");
-        String trustStoreLocation = PathUtils.getAbsolutePathForClasspathResource("cacerts.jks");
+        String keyStoreLocation = PathUtils.getAbsolutePathForClasspathResource("test_client_keystore.jks");
+        String trustStoreLocation = PathUtils.getAbsolutePathForClasspathResource("test_cacerts.jks");
 
         MongoClientParameters mongoClientParameters = new MongoClientParameters()
                 .setTrustStoreLocation(trustStoreLocation)
